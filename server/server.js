@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(morgan('dev'));
 app.use(express.json());     // parse JSON bodies
-app.use(cors());             // not strictly needed if you use the Vite proxy, but harmless
+app.use(cors());            
 
 // Simple healthcheck
 app.get('/healthz', (_req, res) => res.send('ok'));
